@@ -1,5 +1,5 @@
 const config = {
-  message: 'abbababb aba babaab abbaaababababaaab.',
+  message: 'abaabbbba abaaab abababbbaabababb abab.',
   alphabet: 'ab ',
   memorySize: 32
 }
@@ -13,10 +13,12 @@ const app = {
   },
 
   step: () => {
+    display.info.clear()
     display.memory.removeHighlights()
     display.code.clear()
 
     if (app.message.cursor >= app.message.text.length) {
+      display.info.set('Press Enter to Restart')
       return
     }
 

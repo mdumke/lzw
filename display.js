@@ -11,6 +11,17 @@ const display = {
     display.buffer.set('encoder', '')
     display.buffer.set('decoder', '')
     display.output.clear()
+    display.info.set('Right Arrow Key: Step')
+  },
+
+  info: {
+    clear: () => {
+      document.querySelector('#info').innerText = ''
+    },
+
+    set: text => {
+      document.querySelector('#info').innerText = text
+    }
   },
 
   buffer: {
