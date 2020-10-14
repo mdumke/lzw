@@ -15,7 +15,7 @@ const display = {
 
     setTimeout(() => {
       display.info.set('Right Arrow Key: Step')
-    }, 2000)
+    }, 1500)
   },
 
   info: {
