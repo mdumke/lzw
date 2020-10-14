@@ -32,6 +32,11 @@ const display = {
 
       document.querySelector(`#${type}__buffer`).innerText =
         content.replace(/ /g, '_')
+    },
+
+    clearAll: () => {
+      document.querySelector('#encoder__buffer').innerText = ''
+      document.querySelector('#decoder__buffer').innerText = ''
     }
   },
 

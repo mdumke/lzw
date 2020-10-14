@@ -18,7 +18,8 @@ const app = {
     display.code.clear()
 
     if (app.message.cursor >= app.message.text.length) {
-      display.info.set('Press Enter to Restart')
+      display.info.set('Press Enter to Reset')
+      display.buffer.clearAll()
       return
     }
 

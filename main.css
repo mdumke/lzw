@@ -69,7 +69,7 @@ h3 {
 }
 
 .unitnames {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .right-text {
@@ -86,11 +86,11 @@ h3 {
   background: #111;
   border-bottom: 1px solid #222;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .buffer__title {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .code__text {
@@ -98,8 +98,11 @@ h3 {
   width: 170px;
   background: #111;
   padding: 5px;
-  margin-bottom: 10px;
   border-bottom: 1px solid #222;
+}
+
+.code__title {
+  margin-bottom: 10px;
 }
 
 .memory__title {
