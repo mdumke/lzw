@@ -3,10 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>LZW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <h1>LZW - Lempel-Ziv-Welch Compression</h1>
+    </header>
+
+    <div class="message" id="message"></div>
+    <div class="message__title">Message</div>
+
+    <div class="wrapper unitnames">
+      <h2>Encoder</h2>
+      <h2>Decoder</h2>
+    </div>
+
+    <div class="wrapper">
+      <div class="encoder__buffer">
+        <div class="buffer__text" id="encoder__buffer"></div>
+        <h3 class="buffer__title">Buffer</h3>
+      </div>
+
+      <div class="code center-text">
+        <div class="code__text" id="code"></div>
+        <h3 class="code__title">Transmission</h3>
+      </div>
+
+      <div class="decoder__buffer right-text">
+        <div class="buffer__text" id="decoder__buffer"></div>
+        <h3 class="buffer__title">Buffer</h3>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="encoder__memory">
+        <h3 class="memory__title">Memory</h3>
+        <table class="memory" id="encoder__memory"></table>
+      </div>
+
+      <div class="decoder__memory">
+        <h3 class="memory__title">Memory</h3>
+        <table class="memory" id="decoder__memory"></table>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="output encoder__output">
+        <h3>Compressed</h3>
+        <div id="encoder__output"></div>
+      </div>
+      <div class="output right-text decoder__output">
+        <h3>Inflated</h3>
+        <div id="decoder__output"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="utils.js"></script>
   <script src="memory.js"></script>
   <script src="lzw.js"></script>
+  <script src="display.js"></script>
   <script src="index.js"></script>
   <script>
     (() => {

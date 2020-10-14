@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: white;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: orange;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: orange;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.message {
+  font-size: 2.3rem;
+  border-bottom: 1px solid #555;
+  margin-bottom: 5px;
+}
+
+.message p {
+  display: inline;
+}
+
+.message__title {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 35px;
+}
+
+.highlight {
+  background-color: orange !important;
+  color: black;
+}
+
+.unitnames {
+  margin-bottom: 25px;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.buffer__text {
+  min-height: 1.6rem;
+  width: 170px;
+  background: #111;
+  border-bottom: 1px solid #222;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.buffer__title {
+  margin-bottom: 25px;
+}
+
+.code__text {
+  min-height: 1.6rem;
+  width: 170px;
+  background: #111;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #222;
+}
+
+.memory__title {
+  margin-bottom: 10px;
+}
+
+.memory {
+  border: 1px solid #222;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.memory tr {
+  border-bottom: 1px solid #222;
+}
+
+.memory td {
+  background: #111;
+  height: 1.5rem;
+  padding: 5px 5px;
+}
+
+.memory td:nth-child(3) {
+  border-left: 1px solid #222;
+}
+
+.memory td:nth-child(odd) {
+  width: 80px;
+  color: #555;
+}
+
+.memory td:nth-child(even) {
+  width: 100px;
+}
+
+.decoder__memory .memory__title {
+  text-align: right;
+}
+
+.output {
+  width: 360px;
+  word-break: break-word;
+}
+
+.output h3 {
+  margin-bottom: 5px;
+}
