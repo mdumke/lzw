@@ -11,7 +11,11 @@ const display = {
     display.buffer.set('encoder', '')
     display.buffer.set('decoder', '')
     display.output.clear()
-    display.info.set('Right Arrow Key: Step')
+    display.info.clear()
+
+    setTimeout(() => {
+      display.info.set('Right Arrow Key: Step')
+    }, 2000)
   },
 
   info: {
