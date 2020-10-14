@@ -1,6 +1,11 @@
+/*
+ * Lempel-Ziv-Welch compression logic
+ *
+ */
+
 const config = {
-  message: 'abaabbbba abaaab abababbbaabababb abab.',
-  alphabet: 'ab ',
+  message: 'abba babba acab acab babba aaaabababab a cab.',
+  alphabet: 'abc ',
   memorySize: 32
 }
 

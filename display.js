@@ -94,6 +94,7 @@ const display = {
     set: text => {
       const el = document.querySelector('#message')
       el.innerHTML = ''
+      el.appendChild(utils.html.create.p('message: '))
 
       text.split('').forEach(letter => {
         el.appendChild(utils.html.create.p(letter))
@@ -107,14 +108,14 @@ const display = {
         el.classList.remove('highlight')
       })
 
-      el.children[i].classList.add('highlight')
+      el.children[i + 1].classList.add('highlight')
     }
   },
 
   output: {
     append: (type, data) => {
       document.querySelector(`#${type}__output`).innerText +=
-        data.replace(/ /g, '_')
+        data.replace(/ /g, '\u00a0')
     },
 
     clear: () => {

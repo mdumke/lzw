@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LZW</title>
+  <title>LZW Compression</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
 </head>
@@ -13,7 +13,6 @@
     </header>
 
     <div class="message" id="message"></div>
-    <div class="message__title">Message</div>
 
     <div class="wrapper unitnames">
       <h2>Encoder</h2>
@@ -59,6 +58,19 @@
         <h3>Inflated</h3>
         <div id="decoder__output"></div>
       </div>
+    </div>
+
+    <div class="explanation">
+      What's going on here? The compression algorithm devised by Lempel and Ziv (1977/8),
+      with improvements by Welch (1984) lies behind formats such
+      as zip or png. We can see how the algorithms adapts to repetitions in the content. Whenever the encoder encounters a pattern already in memory, the respective register is highlighted.
+
+      For a detailed explanation of how the algorithm works, check out this
+      <a href="https://marknelson.us/posts/2011/11/08/lzw-revisited.html">
+        blog post</a>.
+      For more on the topic of source coding in general, check out MIT's
+      <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/">
+        Digital Communication Systems</a>.
     </div>
   </div>
 
