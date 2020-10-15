@@ -73,7 +73,8 @@ const display = {
       const addr = type === 'encoder' ? v : k
       const content = type === 'encoder' ? k : v
 
-      document.querySelector(`#${type}__memory--${addr}`).innerText = content
+      document.querySelector(`#${type}__memory--${addr}`).innerText =
+        content.replace(/ /g, '_')
     },
 
     highlight: type => (k, v) => {
