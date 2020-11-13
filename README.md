@@ -2,7 +2,7 @@
 
 A simplified, JavaScript-based implementation of the famous compression algorithm for illustrative purposes.
 
-[See it in action](https://mdumke.github.io/lzw)
+[See it in action](https://mdumke.github.io/lzw-viz)
 
 LZW is at the heart of zip, png, and many other compression formats. It creates variable-length codes without knowing a probability distribution over symbols beforehand. LZW adapts to the respective data to encode (compress) and manages to be efficient and general purpose at the same time.
 
